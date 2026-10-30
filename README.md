@@ -1,21 +1,31 @@
 <div align="center">
 
-# system-monitor
-
-**Linux health in plain English — snapshots or a live dashboard that tells you what matters.**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/readme/header-dark.svg">
+  <img src="docs/readme/header-light.svg" width="100%" alt="system-monitor — Linux health in plain English">
+</picture>
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![Textual](https://img.shields.io/badge/TUI-Textual-FFEAA7?style=flat-square)](https://textual.textualize.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Linux-lightgrey?style=flat-square)](https://kernel.org/)
 
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/readme/divider-dark.svg">
+  <img src="docs/readme/divider-light.svg" width="100%" alt="">
+</picture>
 
----
+</div>
 
 ## Why it exists
 
 Raw metrics from `htop` or `btop` are fast — but when you are juggling a homelab GPU, disks, and services, you want **verdicts**, not homework. **sys-check** prints a one-shot health card; **PlainTop** is a full-screen live dashboard with **OK / Watch / Problem** labels and sentences like “10 GB free for new apps” instead of opaque percentages.
+
+## Highlights
+
+- 📋 **sys-check** — one-shot card; pair with `watch -n 5 sys-check`
+- 🖥️ **PlainTop** — btop-style TUI with verdicts and rolling graphs
+- ⚡ **Fortress hook** — optional services pane via `FORTRESS_HOME` + **`s`** menu
 
 ## Features
 
@@ -115,10 +125,4 @@ Expects `$FORTRESS_HOME/control/fortress` and `$FORTRESS_HOME/control/status.py`
 
 ---
 
-<div align="center">
-
-**MIT** — see [LICENSE](LICENSE)
-
-Built by **[Vector26](https://github.com/Vector26)** · Metrics with a point of view
-
-</div>
+[Vector26](https://github.com/Vector26) · [MIT License](LICENSE)
